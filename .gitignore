@@ -1,0 +1,13 @@
+﻿# Environments
+venv/
+.env
+__pycache__/
+.pytest_cache/
+
+# Heavy PyTorch and Raw ONNX Models (Block files > 100MB)
+models/distilbert_baseline/
+models/moderation_model.onnx
+models/moderation_model.onnx.data
+
+# Allow only the optimized INT8 model
+!models/moderation_model_int8.onnx
